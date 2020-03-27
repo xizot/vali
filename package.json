@@ -1,0 +1,11 @@
+{
+  "name": "xizot",
+  "version": "1.0.0",
+  "description": "FE Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xizot",
+  "license": "ISC"
+}

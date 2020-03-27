@@ -1,0 +1,28 @@
+//rs-sm : small
+//rs-md : medium
+//rs-lg : large
+//rs-xl : extra-large
+
+@mixin rs-sm {
+    @media only screen and (max-width:576px) {
+        @content;
+    }
+}
+
+@mixin rs-md {
+    @media only screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin rs-lg {
+    @media only screen and (max-width:992px) {
+        @content;
+    }
+}
+
+@mixin rs-xl {
+    @media only screen and (max-width:1200px) {
+        @content;
+    }
+}
