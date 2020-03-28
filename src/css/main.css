@@ -16,6 +16,18 @@
       flex-wrap: wrap;
 }
 
+.d-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .j-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -112,7 +124,98 @@
   padding-bottom: 20px;
 }
 
-h1 {
+.btn {
+  cursor: pointer;
+  padding: 12px 25px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #35baf2;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+main #banner {
+  background: url("https://www.vali.se/wp-content/uploads/2020/02/bakgrund_sakerhetshyvel.jpg") no-repeat center/cover;
+}
+
+main #banner .container {
+  padding: 170px 20px 200px;
+}
+
+main #banner .container .banner-content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 576px) {
+  main #banner .container .banner-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #banner .container .banner-content h1 {
+    border-bottom: 2px solid white;
+  }
+  main #banner .container .banner-content a {
+    margin-left: 0 !important;
+  }
+}
+
+main #banner .container .banner-content h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  color: white;
+}
+
+main #banner .container .banner-content h1 i {
+  font-size: 70px;
+}
+
+main #banner .container .banner-content h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  display: block;
+  padding: 10px 0 20px;
+}
+
+main #banner .container .banner-content a {
+  margin-left: 99px;
+}
+
+main #banner .container .banner-content a #btn-to-store {
+  font-size: 18px;
+}
+
+main #video .video-content .video-content-text {
+  width: 50%;
   text-align: center;
+  padding: 0 20px;
+}
+
+main #video .video-content .video-content-text h1 {
+  font-size: 50px;
+  color: #444;
+  border-bottom: 1px solid #444;
+  padding: 48px 16px;
+}
+
+main #video .video-content .video-content-text p {
+  padding: 18px;
+  color: rgba(68, 68, 68, 0.6);
+  font-size: 20px;
+}
+
+main #video .video-content .video-content-vd {
+  width: 50%;
+}
+
+main #video .video-content .video-content-vd video {
+  width: 100%;
+  height: 400px;
 }
 /*# sourceMappingURL=main.css.map */
