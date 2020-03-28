@@ -57,10 +57,26 @@ main{
     #video{
   
             .video-content{
+                @include rs-lg{
+                    .video-content-text{
+                        width: 100% !important;
+                        h1{
+                            font-size: 40px !important;
+                        }
+                        p{
+                            line-height: 2rem;
+                        }
+                    }
+                    .video-content-vd{
+                        width: 100% !important;
+                       
+                    }
+                }
                 .video-content-text{
                     width: 50%;
                     text-align: center;
                     padding: 0 20px;
+                   
                     h1{
                         font-size: 50px;
                         color: $font-color;

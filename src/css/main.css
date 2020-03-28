@@ -191,6 +191,21 @@ main #banner .container .banner-content a #btn-to-store {
   font-size: 18px;
 }
 
+@media only screen and (max-width: 992px) {
+  main #video .video-content .video-content-text {
+    width: 100% !important;
+  }
+  main #video .video-content .video-content-text h1 {
+    font-size: 40px !important;
+  }
+  main #video .video-content .video-content-text p {
+    line-height: 2rem;
+  }
+  main #video .video-content .video-content-vd {
+    width: 100% !important;
+  }
+}
+
 main #video .video-content .video-content-text {
   width: 50%;
   text-align: center;
