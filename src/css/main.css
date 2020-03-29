@@ -181,6 +181,7 @@ main #banner .container .banner-content h3 {
   color: white;
   display: block;
   padding: 10px 0 20px;
+  margin-left: 30px;
 }
 
 main #banner .container .banner-content a {
@@ -189,6 +190,15 @@ main #banner .container .banner-content a {
 
 main #banner .container .banner-content a #btn-to-store {
   font-size: 18px;
+}
+
+@media only screen and (max-width: 992px) {
+  main #video .video-content-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -232,5 +242,177 @@ main #video .video-content .video-content-vd {
 main #video .video-content .video-content-vd video {
   width: 100%;
   height: 400px;
+}
+
+main #section {
+  background: url("https://www.vali.se/wp-content/uploads/2020/02/rakborste_bakgrund.jpg") no-repeat center/cover;
+  padding: 250px 0;
+}
+
+main #section .container .section-content {
+  width: 500px;
+  max-width: 100%;
+  padding: 20px;
+  letter-spacing: 1px;
+  background-color: white;
+  text-align: center;
+}
+
+main #section .container .section-content h3 {
+  font-size: 20px;
+  line-height: 2rem;
+  color: rgba(68, 68, 68, 0.7);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+main #section .container .section-content p {
+  font-size: 14px;
+  color: rgba(68, 68, 68, 0.6);
+  line-height: 1.5rem;
+}
+
+main #product {
+  padding: 100px 0 30px;
+}
+
+main #product .container .product-title {
+  text-align: center;
+}
+
+main #product .container .product-title h1 {
+  color: #444;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+main #product .container .product-title h3 {
+  font-size: 20px;
+  color: rgba(68, 68, 68, 0.6);
+  font-weight: 400;
+  display: block;
+  margin: 40px 0 20px;
+}
+
+main #product .container .product-slider {
+  margin-top: 40px;
+}
+
+main #product .container .product-slider input {
+  display: none;
+}
+
+main #product .container .product-slider input:nth-child(1):checked ~ .controls label:nth-child(1)::after {
+  opacity: 1;
+}
+
+main #product .container .product-slider input:nth-child(1):checked ~ .product-slider__content ul li:first-child {
+  margin-left: 0%;
+}
+
+main #product .container .product-slider input:nth-child(2):checked ~ .controls label:nth-child(2)::after {
+  opacity: 1;
+}
+
+main #product .container .product-slider input:nth-child(2):checked ~ .product-slider__content ul li:first-child {
+  margin-left: -100%;
+}
+
+main #product .container .product-slider input:nth-child(3):checked ~ .controls label:nth-child(3)::after {
+  opacity: 1;
+}
+
+main #product .container .product-slider input:nth-child(3):checked ~ .product-slider__content ul li:first-child {
+  margin-left: -200%;
+}
+
+main #product .container .product-slider input:nth-child(4):checked ~ .controls label:nth-child(4)::after {
+  opacity: 1;
+}
+
+main #product .container .product-slider input:nth-child(4):checked ~ .product-slider__content ul li:first-child {
+  margin-left: -300%;
+}
+
+main #product .container .product-slider input:nth-child(5):checked ~ .controls label:nth-child(5)::after {
+  opacity: 1;
+}
+
+main #product .container .product-slider input:nth-child(5):checked ~ .product-slider__content ul li:first-child {
+  margin-left: -400%;
+}
+
+main #product .container .product-slider .product-slider__content ul {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+}
+
+main #product .container .product-slider .product-slider__content ul li {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: margin-left .4s ease-in-out;
+  transition: margin-left .4s ease-in-out;
+}
+
+main #product .container .product-slider .controls label {
+  cursor: pointer;
+  margin: 20px 10px;
+  width: 11px;
+  height: 11px;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #product .container .product-slider .controls label::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.7);
+  border-radius: 100%;
+  opacity: 0;
+}
+
+main #review .review-content .review-content__item {
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+main #review .review-content h1 {
+  height: 100%;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(68, 68, 68, 0.7);
+}
+
+main #review .review-content img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  main #review .review-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #review .review-content .review-content__item {
+    width: 100%;
+  }
+  main #review .review-content .review-content__item h1 {
+    font-size: 40px;
+    padding: 40px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

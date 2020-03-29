@@ -43,6 +43,7 @@ main{
                     color: white;
                     display: block;
                     padding: 10px 0 20px;
+                    margin-left: 30px;
                 }
                 a{
                     margin-left: 99px;
@@ -55,6 +56,11 @@ main{
     }
 
     #video{
+        @include rs-lg{
+            .video-content-2{
+                flex-direction: column-reverse;
+            }
+        }
   
             .video-content{
                 @include rs-lg{
@@ -99,5 +105,155 @@ main{
                 }
             }
      
+    }
+
+    #section{
+        background: url('https://www.vali.se/wp-content/uploads/2020/02/rakborste_bakgrund.jpg') no-repeat center/cover;
+        padding:250px 0;
+        .container{
+            .section-content{
+                width: 500px;
+                max-width: 100%;
+                padding: 20px;
+                letter-spacing: 1px;
+                background-color: white;
+                text-align: center;
+                h3{
+                    font-size: 20px;
+                    line-height: 2rem;
+                    color: rgba($color: $font-color, $alpha: .7);
+                    font-weight: 600;
+                    margin-bottom: 10px;
+
+                }
+                p{
+                    font-size: 14px;
+                    color: rgba($color: $font-color, $alpha: .6);
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    #product{
+        padding: 100px 0 30px;
+        .container{
+            .product-title{
+                text-align: center;
+                h1{
+                    color: $font-color;
+                    font-size: 50px;
+                    font-weight: bolder;
+                }
+                h3{
+                    font-size:20px;
+                    color: rgba($color: $font-color, $alpha: .6);
+                    font-weight: 400;
+                    display: block;
+                    margin: 40px 0 20px;
+                }
+                a{
+                    button{
+
+                    }
+                }
+            }
+
+            .product-slider{
+                margin-top: 40px;
+                input{
+                    display: none;
+                }
+
+                @for $i from 1 through 5 {
+                    input:nth-child(#{$i}):checked ~ .controls label:nth-child(#{$i}){
+                        &::after{
+                            opacity: 1;
+                        }
+                    }
+
+                    input:nth-child(#{$i}):checked ~ .product-slider__content ul li:first-child{
+                        margin-left: -($i - 1) *100%;
+                    }
+                }
+                .product-slider__content{
+                    
+                    ul{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: 0;
+                        li{
+                            display: inline-block;
+                            width: 100%;
+                            text-align: center;
+                       
+                            transition: margin-left .4s ease-in-out;
+                            a{
+                                img{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .controls{
+                    label{
+                        cursor: pointer;
+                        margin:20px 10px;
+                        width: 11px;
+                        height: 11px;
+                        background-color: rgba($color: gray, $alpha: .3);
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::after{
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba($color: $font-color, $alpha: .7);
+                            border-radius: 100%;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    #review{
+            .review-content{
+               
+                .review-content__item
+                {
+                    width: 50%;
+                    background-color: rgba($color: gray, $alpha: .3);
+            
+                }
+                h1{
+                    height: 100%;
+                    line-height: 1.5em;
+                    text-align: center;
+                    font-size: 50px;
+                    color: rgba($color: $font-color, $alpha: .7);
+                  
+                }
+                img{
+                    width: 100%;
+                }
+                @include rs-lg{
+                    flex-direction: column;
+                    .review-content__item{
+                        width: 100%;
+                        h1{
+                            font-size: 40px;
+                            padding: 40px 0;
+                        }
+                    }
+                }
+            }
+
     }
 }
