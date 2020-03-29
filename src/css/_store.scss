@@ -1,0 +1,103 @@
+main{
+    #store-banner{
+        background-color: #1c2428;
+        @include rs-lg{
+            .store-banner__left{
+                width: 100% !important;
+            }
+            .store-banner__right{
+                width:100%  !important;
+                padding:40px 30px !important;
+            }
+        }
+        .store-banner__left{
+            width: 65%;
+            img{
+                width: 100%;
+            }
+        }
+
+        .store-banner__right{
+           
+            width: 35%;
+            padding: 20px;
+            text-align: center;
+           
+            h1{
+                color: white;
+                font-size: 50px;
+                @include rs-lg{
+                    font-size: 40px;
+                }
+            }
+            h3{
+                padding-top: 20px;
+                color: rgba($color: white, $alpha: .6);
+                line-height: 2rem;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    #warning{
+        background-color:#700000 ;
+        .container{
+            padding: 10px 0;
+           
+            p{
+                color:white;
+                line-height: 2rem;
+                font-size: 15px;
+            }
+        }
+    }
+
+    $product-col:3;
+    #store-product{
+        padding:30px 0 60px;
+        .container{
+            .store-product__item{
+                width: 100%/$product-col;
+                padding: 10px;
+                .item-space{
+                    text-align: center;
+                    .star-review{
+                        padding:10px;
+                        i{
+                            color: $main-color;
+                        }
+                    }
+        
+                    p{
+                        font-size: 14px;
+                        font-weight: bolder;
+                        color: $font-color;
+                    }
+             
+                    a{
+                       
+                        img{
+                            width: 100%;
+                            box-shadow: 1px 1px 0px #ddd, 0px 0px 25px #ddd, 0px 0px 9px gray;
+                            border-radius: 5px;
+                        }
+                        h3{
+                            padding-top: 20px;
+                            font-size: 25px;
+                            text-transform: uppercase;
+                            font-weight: 200;
+                            color: rgba($color: $font-color, $alpha: .7);
+                        }
+                       
+                        button{
+                            margin:10px 0px 10px;
+                        }
+                    
+
+                    }
+                }
+            }
+        }
+    }
+}

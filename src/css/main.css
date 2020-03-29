@@ -665,4 +665,111 @@ main #features .container .features-content a button:hover {
     margin: 0 auto;
   }
 }
+
+main #store-banner {
+  background-color: #1c2428;
+}
+
+@media only screen and (max-width: 992px) {
+  main #store-banner .store-banner__left {
+    width: 100% !important;
+  }
+  main #store-banner .store-banner__right {
+    width: 100%  !important;
+    padding: 40px 30px !important;
+  }
+}
+
+main #store-banner .store-banner__left {
+  width: 65%;
+}
+
+main #store-banner .store-banner__left img {
+  width: 100%;
+}
+
+main #store-banner .store-banner__right {
+  width: 35%;
+  padding: 20px;
+  text-align: center;
+}
+
+main #store-banner .store-banner__right h1 {
+  color: white;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  main #store-banner .store-banner__right h1 {
+    font-size: 40px;
+  }
+}
+
+main #store-banner .store-banner__right h3 {
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main #warning {
+  background-color: #700000;
+}
+
+main #warning .container {
+  padding: 10px 0;
+}
+
+main #warning .container p {
+  color: white;
+  line-height: 2rem;
+  font-size: 15px;
+}
+
+main #store-product {
+  padding: 30px 0 60px;
+}
+
+main #store-product .container .store-product__item {
+  width: 33.33333%;
+  padding: 10px;
+}
+
+main #store-product .container .store-product__item .item-space {
+  text-align: center;
+}
+
+main #store-product .container .store-product__item .item-space .star-review {
+  padding: 10px;
+}
+
+main #store-product .container .store-product__item .item-space .star-review i {
+  color: #35baf2;
+}
+
+main #store-product .container .store-product__item .item-space p {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #444;
+}
+
+main #store-product .container .store-product__item .item-space a img {
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 0px #ddd, 0px 0px 25px #ddd, 0px 0px 9px gray;
+          box-shadow: 1px 1px 0px #ddd, 0px 0px 25px #ddd, 0px 0px 9px gray;
+  border-radius: 5px;
+}
+
+main #store-product .container .store-product__item .item-space a h3 {
+  padding-top: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: rgba(68, 68, 68, 0.7);
+}
+
+main #store-product .container .store-product__item .item-space a button {
+  margin: 10px 0px 10px;
+}
 /*# sourceMappingURL=main.css.map */
