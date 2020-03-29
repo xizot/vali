@@ -137,6 +137,11 @@
   border-radius: 4px;
 }
 
+.btn:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
 main #banner {
   background: url("https://www.vali.se/wp-content/uploads/2020/02/bakgrund_sakerhetshyvel.jpg") no-repeat center/cover;
 }
@@ -410,6 +415,12 @@ main #review .review-content h1 {
 
 main #review .review-content img {
   width: 100%;
+  cursor: pointer;
+}
+
+main #review .review-content img:hover {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 @media only screen and (max-width: 992px) {
