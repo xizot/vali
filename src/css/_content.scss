@@ -147,10 +147,17 @@ main{
         .container{
             .product-title{
                 text-align: center;
+                @include rs-lg{
+                    width: 100%;
+                }
                 h1{
                     color: $font-color;
                     font-size: 50px;
                     font-weight: bolder;
+                    @include rs-lg{
+
+                        font-size:40px;
+                    }
                 }
                 h3{
                     font-size:20px;

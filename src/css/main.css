@@ -291,10 +291,22 @@ main #product .container .product-title {
   text-align: center;
 }
 
+@media only screen and (max-width: 992px) {
+  main #product .container .product-title {
+    width: 100%;
+  }
+}
+
 main #product .container .product-title h1 {
   color: #444;
   font-size: 50px;
   font-weight: bolder;
+}
+
+@media only screen and (max-width: 992px) {
+  main #product .container .product-title h1 {
+    font-size: 40px;
+  }
 }
 
 main #product .container .product-title h3 {
