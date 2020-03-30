@@ -748,6 +748,18 @@ main #store-product .container .store-product__item .item-space .star-review i {
   color: #35baf2;
 }
 
+main #store-product .container .store-product__item .item-space .actions #btn-view-cart {
+  display: none;
+}
+
+main #store-product .container .store-product__item .item-space .actions #btn-add-cart::after {
+  content: ' +';
+}
+
+main #store-product .container .store-product__item .item-space .actions #btn-view-cart {
+  display: inline-block;
+}
+
 main #store-product .container .store-product__item .item-space p {
   font-size: 14px;
   font-weight: bolder;

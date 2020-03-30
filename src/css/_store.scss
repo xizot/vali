@@ -68,7 +68,24 @@ main{
                             color: $main-color;
                         }
                     }
-        
+                    
+                    .actions{
+                        #btn-view-cart{
+                            display: none;
+                        }
+                    }
+
+                    .actions{
+                        #btn-add-cart{
+                            &::after{
+                                content: ' +';
+                                
+                            }
+                        }
+                        #btn-view-cart{
+                            display: inline-block;
+                        }
+                    }
                     p{
                         font-size: 14px;
                         font-weight: bolder;
