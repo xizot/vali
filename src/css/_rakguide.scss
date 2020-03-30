@@ -1,0 +1,138 @@
+
+main{
+    #rakguide-video{
+        background-color: rgba($color: #000000, $alpha: .7);
+        .container{
+            iframe{
+                width:100% !important;
+                height:570px !important;
+            }
+        }
+        
+    }
+
+    #rakguide-content{
+        padding: 30px 0 30px;
+        // position: relative;
+        .modal{
+           
+            height: 100vh;
+            width: 100%;
+            padding: 40px;
+            background-color: rgba($color: #000000, $alpha: .5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            justify-content: center;
+            align-items: center;
+           
+            p{
+                
+                background-color: white;
+                padding: 40px;
+                line-height: 2rem;
+                text-align: center;
+                color: rgba($color: $font-color, $alpha: .7);
+            }
+        }
+       
+        .title{
+            h3{
+                color: rgba($color: #000000, $alpha: .5);
+                font-weight: lighter;
+                font-size: 40px;
+            }
+        }
+        .container{
+         
+            h1{
+               font-size: 50px;
+               color: $font-color;
+               font-weight: bolder;
+            }
+            .rakguide-content__main{
+             
+                .rakguide-content__main-left{
+                    width: 60%;
+                    .rakguide-content__left-item{
+                        padding-top: 40px;
+                        .rak-modal{
+                            cursor: pointer;
+                            font-size: 18px;
+                            &:hover{
+                                color: $main-color;
+                            }
+                        }
+                        img{
+                            margin:20px 0;
+                        }
+                        .short-guide__item{
+                          margin-top: 20px;
+                            ol{
+                               
+                                // list-style-type: decimal !important;
+                                width: 100%;
+                                li{
+                                    width: 50%;
+                                    display: flex;
+                                    p{
+                                        color: rgba($color: $font-color, $alpha: .7);
+                                        font-size: 17px;
+                                        padding: 15px 10px;
+                                    }
+                                    span{
+                                        font-size: 40px;
+                                        font-weight: 800;
+                                        color: rgba($color: $font-color, $alpha: .8);
+                                    }
+                                }
+                            }
+                        }
+                        >p{
+                            font-size: 20px;
+                            color: rgba($color: #000000, $alpha: .5);
+                            line-height: 1.5em;
+                           
+                        }
+                        .sub::first-letter{
+                           
+                            float: left;
+                            font-size: 53px;
+                            padding: 4px;
+                            margin-top: 10px;
+                            font-weight: 600;
+                        }
+                        
+                    }
+                }
+                .rakguide-content__main-right{
+                    width: 40%;
+                    padding: 40px;
+                    .rakguide-content__right-item{
+                       
+                        ul{
+                            li{
+                                margin-top: 10px;
+                                p{
+                                    font-size: 18px;
+                                    line-height: 2rem;
+                                    color: rgba($color: #000000, $alpha: .7);
+                                    &::before{
+                                        display: inline-block;
+                                        margin-right:10px ;
+                                        content: ' ';
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 100%;
+                                        background-color: rgba($color: #000000, $alpha: .7);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
