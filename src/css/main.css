@@ -149,6 +149,16 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 576px) {
+  main {
+    margin-top: 30px !important;
+  }
+}
+
 main #banner {
   background: url("https://www.vali.se/wp-content/uploads/2020/02/bakgrund_sakerhetshyvel.jpg") no-repeat center/cover;
 }
@@ -1058,6 +1068,15 @@ main #store-product .container .store-product__item .item-space a button {
   margin: 10px 0px 10px;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
 header .containerx {
   padding: 1px 50px;
   margin: 0 auto;
@@ -1065,6 +1084,12 @@ header .containerx {
 
 header .containerx .header-left img {
   max-width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  header .containerx .header-left {
+    width: 20%;
+  }
 }
 
 header .containerx .header-right {
@@ -1124,25 +1149,6 @@ header .containerx .header-right .btn-box:hover {
   header .containerx .header-right .btn-box {
     display: block !important;
   }
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
-
-@media only screen and (max-width: 576px) {
-  header {
-    position: relative;
-  }
-}
-
-main {
-  margin-top: 70px;
 }
 
 main #rakguide-video {

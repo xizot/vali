@@ -19,6 +19,10 @@ html{
     scroll-behavior: smooth;
 }
 main {
+    margin-top: 70px;
+    @include rs-sm{
+        margin-top: 30px !important;
+    }
     #banner {
         background: url('https://www.vali.se/wp-content/uploads/2020/02/bakgrund_sakerhetshyvel.jpg') no-repeat center/cover;
         .container {

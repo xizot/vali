@@ -1,9 +1,25 @@
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    @include rs-sm{
+       
+
+    }
     .containerx {
         padding: 1px 50px;
         margin: 0 auto;
-        .header-left img {
+        .header-left {
+            img {
             max-width: 100%;
+            
+            }
+            @include rs-sm{
+                width: 20%;
+            }
         }
         .header-center {}
         .header-right {
