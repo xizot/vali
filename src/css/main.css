@@ -145,6 +145,10 @@
           filter: brightness(120%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main #banner {
   background: url("https://www.vali.se/wp-content/uploads/2020/02/bakgrund_sakerhetshyvel.jpg") no-repeat center/cover;
 }
@@ -795,7 +799,7 @@ main #review .container .controls label:after {
 }
 
 main #about .about-top {
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: rgba(53, 186, 242, 0.3);
   text-align: center;
   padding: 50px 0 10px;
 }
