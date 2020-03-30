@@ -794,4 +794,33 @@ main #store-product .container .store-product__item .item-space a h3 {
 main #store-product .container .store-product__item .item-space a button {
   margin: 10px 0px 10px;
 }
+
+.header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-left img {
+  max-width: 100%;
+}
+
+.header .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-right .header-item {
+  padding: 20px;
+}
 /*# sourceMappingURL=main.css.map */
