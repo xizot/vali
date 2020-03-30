@@ -727,33 +727,13 @@ main #warning .container p {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 992px) {
-  main #warning .container p {
-    padding: 0 40px;
-    text-align: center;
-  }
-}
-
 main #store-product {
   padding: 30px 0 60px;
 }
 
 main #store-product .container .store-product__item {
-  padding: 10px;
   width: 33.33333%;
-}
-
-@media only screen and (max-width: 992px) {
-  main #store-product .container .store-product__item {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  main #store-product .container .store-product__item {
-    width: 100%;
-    padding: 40px;
-  }
+  padding: 10px;
 }
 
 main #store-product .container .store-product__item .item-space {
