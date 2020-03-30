@@ -418,6 +418,10 @@ main #review .review-content .review-content__item {
   background-color: rgba(53, 186, 242, 0.3);
 }
 
+main #review .review-content .review-content__item img {
+  width: 100%;
+}
+
 main #review .review-content h1 {
   height: 100%;
   line-height: 1.5em;
@@ -433,16 +437,16 @@ main #review .review-content h1 {
 }
 
 @media only screen and (max-width: 992px) {
-  main #review {
+  main #review .review-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main #review .review-content__item {
-    width: 100%;
+  main #review .review-content .review-content__item {
+    width: 100% !important;
   }
-  main #review .review-content__item h1 {
+  main #review .review-content .review-content__item h1 {
     font-size: 40px;
     padding: 40px 0;
   }
@@ -1072,36 +1076,54 @@ header .containerx .header-right {
           align-items: center;
 }
 
-header .containerx .header-item {
+header .containerx .header-right .header-item {
   padding: 20px;
 }
 
-header .containerx .header-item a {
+@media only screen and (max-width: 576px) {
+  header .containerx .header-right .header-item {
+    display: none;
+  }
+}
+
+header .containerx .header-right .header-item a {
   font-family: 'Source Sans Pro', sans-serif;
   color: #444;
   font-size: 15px;
   font-weight: 600;
 }
 
-header .containerx .header-item .btn-buy {
+header .containerx .header-right .header-item .btn-buy {
   padding: 5px 15px !important;
   border-radius: 10px;
 }
 
-header .containerx .header-item:hover {
+header .containerx .header-right .header-item:hover {
   border-top: 2px solid #35baf2;
 }
 
-header .containerx .header-item:hover a {
+header .containerx .header-right .header-item:hover a {
   color: #35baf2;
 }
 
-header .containerx .header-money:hover {
+header .containerx .header-right .header-money:hover {
   border: none !important;
 }
 
-header .containerx .btn-box:hover {
+@media only screen and (max-width: 576px) {
+  header .containerx .header-right .header-money {
+    display: block !important;
+  }
+}
+
+header .containerx .header-right .btn-box:hover {
   border: none !important;
+}
+
+@media only screen and (max-width: 576px) {
+  header .containerx .header-right .btn-box {
+    display: block !important;
+  }
 }
 
 header {

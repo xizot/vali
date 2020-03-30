@@ -225,7 +225,9 @@ main {
                 {
                     width: 50%;
                     background-color: rgba($color: $bg-color, $alpha: .3);
-            
+                    img{
+                        width: 100%;
+                    }
                 }
                 h1{
                     height: 100%;
@@ -238,17 +240,18 @@ main {
                     }
                   
                 }
-            }
-            @include rs-lg {
-                flex-direction: column;
-                .review-content__item {
-                    width: 100%;
-                    h1 {
-                        font-size: 40px;
-                        padding: 40px 0;
+                @include rs-lg {
+                    flex-direction: column;
+                    .review-content__item {
+                        width: 100% !important;
+                        h1 {
+                            font-size: 40px;
+                            padding: 40px 0;
+                        }
                     }
                 }
             }
+            
     
         .container {
             padding: 66px 0 14rem;
