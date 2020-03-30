@@ -1,11 +1,29 @@
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    @include rs-sm{
+        position: relative;
+    }
+    
+}
 main{
+    margin-top: 70px;
     #rakguide-video{
         background-color: rgba($color: #000000, $alpha: .7);
         .container{
             iframe{
                 width:100% !important;
                 height:570px !important;
+                @include rs-sm{
+                    width: 100%;
+                    height: 250px !important;
+
+                }
             }
         }
         
@@ -42,19 +60,35 @@ main{
                 color: rgba($color: #000000, $alpha: .5);
                 font-weight: lighter;
                 font-size: 40px;
+                @include rs-lg{
+                    font-size: 30px;
+                }
             }
         }
         .container{
          
             h1{
-               font-size: 50px;
+               font-size: 40px;
                color: $font-color;
                font-weight: bolder;
+               @include rs-lg{
+                   padding: 0 10px;
+               }
             }
             .rakguide-content__main{
+                @include rs-lg{
+                    padding: 10px;
+                }
              
                 .rakguide-content__main-left{
                     width: 60%;
+                    @include rs-sm{
+                       
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
                     .rakguide-content__left-item{
                         padding-top: 40px;
                         .rak-modal{
@@ -80,6 +114,10 @@ main{
                                         color: rgba($color: $font-color, $alpha: .7);
                                         font-size: 17px;
                                         padding: 15px 10px;
+                                        @include rs-lg{
+                                            font-size: 15px;
+                                            line-height: 1.75rem;
+                                        }
                                     }
                                     span{
                                         font-size: 40px;
@@ -93,6 +131,9 @@ main{
                             font-size: 20px;
                             color: rgba($color: #000000, $alpha: .5);
                             line-height: 1.5em;
+                            @include rs-lg{
+                                font-size: 18px;
+                            }
                            
                         }
                         .sub::first-letter{
@@ -109,6 +150,10 @@ main{
                 .rakguide-content__main-right{
                     width: 40%;
                     padding: 40px;
+                    @include rs-sm{
+                        width: 100%;
+                        padding: 40px 10px;
+                    }
                     .rakguide-content__right-item{
                        
                         ul{
@@ -117,7 +162,7 @@ main{
                                 p{
                                     font-size: 18px;
                                     line-height: 2rem;
-                                    color: rgba($color: #000000, $alpha: .7);
+                                    color: rgba($color: #000000, $alpha: .6);
                                     &::before{
                                         display: inline-block;
                                         margin-right:10px ;

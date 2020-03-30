@@ -428,27 +428,17 @@ main #review .review-content h1 {
   }
 }
 
-main #review .review-content img {
-  width: 100%;
-  cursor: pointer;
-}
-
-main #review .review-content img:hover {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
-
 @media only screen and (max-width: 992px) {
-  main #review .review-content {
+  main #review {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main #review .review-content .review-content__item {
+  main #review .review-content__item {
     width: 100%;
   }
-  main #review .review-content .review-content__item h1 {
+  main #review .review-content__item h1 {
     font-size: 40px;
     padding: 40px 0;
   }
@@ -473,6 +463,214 @@ main #review .container h1 {
 
 main #review .container input {
   display: none;
+}
+
+main #review .container input:nth-of-type(1):checked ~ .controls label:nth-child(1)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(1):checked ~ .review-slider ul li:nth-child(1) {
+  display: block;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main #review .container input:nth-of-type(1):checked ~ .controls label:nth-child(1)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(1):checked ~ .review-slider ul li:nth-child(1) {
+  display: block;
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
+}
+
+main #review .container input:nth-of-type(2):checked ~ .controls label:nth-child(2)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(2):checked ~ .review-slider ul li:nth-child(2) {
+  display: block;
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
+}
+
+main #review .container input:nth-of-type(3):checked ~ .controls label:nth-child(3)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(3):checked ~ .review-slider ul li:nth-child(3) {
+  display: block;
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
+}
+
+main #review .container .review-slider {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #review .container .review-slider ul {
+  font-size: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #review .container .review-slider ul li {
+  overflow: hidden;
+  width: 500px;
+  font-size: 20px;
+  display: none;
+  -webkit-transition: all 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media only screen and (max-width: 576px) {
+  main #review .container .review-slider ul li {
+    padding-top: 20px;
+    width: 400px;
+  }
+}
+
+main #review .container .review-slider ul li p {
+  line-height: 2rem;
+  font-size: 18px;
+  color: rgba(68, 68, 68, 0.6);
+}
+
+main #review .container input:nth-of-type(2):checked ~ .controls label:nth-child(2)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(2):checked ~ .review-slider ul li:nth-child(2) {
+  display: block;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main #review .container input:nth-of-type(1):checked ~ .controls label:nth-child(1)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(1):checked ~ .review-slider ul li:nth-child(1) {
+  display: block;
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
+}
+
+main #review .container input:nth-of-type(2):checked ~ .controls label:nth-child(2)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(2):checked ~ .review-slider ul li:nth-child(2) {
+  display: block;
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
+}
+
+main #review .container input:nth-of-type(3):checked ~ .controls label:nth-child(3)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(3):checked ~ .review-slider ul li:nth-child(3) {
+  display: block;
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
+}
+
+main #review .container .review-slider {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #review .container .review-slider ul {
+  font-size: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #review .container .review-slider ul li {
+  overflow: hidden;
+  width: 500px;
+  font-size: 20px;
+  display: none;
+  -webkit-transition: all 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media only screen and (max-width: 576px) {
+  main #review .container .review-slider ul li {
+    padding-top: 20px;
+    width: 400px;
+  }
+}
+
+main #review .container .review-slider ul li p {
+  line-height: 2rem;
+  font-size: 18px;
+  color: rgba(68, 68, 68, 0.6);
+}
+
+main #review .container input:nth-of-type(3):checked ~ .controls label:nth-child(3)::after {
+  opacity: 1;
+}
+
+main #review .container input:nth-of-type(3):checked ~ .review-slider ul li:nth-child(3) {
+  display: block;
 }
 
 @-webkit-keyframes fadeIn {
@@ -597,7 +795,7 @@ main #review .container .controls label:after {
 }
 
 main #about .about-top {
-  background-color: rgba(53, 186, 242, 0.3);
+  background-color: rgba(128, 128, 128, 0.3);
   text-align: center;
   padding: 50px 0 10px;
 }
@@ -894,19 +1092,32 @@ header .containerx .header-item:hover a {
   color: #35baf2;
 }
 
-<<<<<<< HEAD
 header .containerx .header-money:hover {
   border: none !important;
-=======
-header .containerx .header-item .header-money {
-  padding-left: 20px;
->>>>>>> master
 }
 
 header .containerx .btn-box:hover {
   border: none !important;
 }
-<<<<<<< HEAD
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    position: relative;
+  }
+}
+
+main {
+  margin-top: 70px;
+}
 
 main #rakguide-video {
   background-color: rgba(0, 0, 0, 0.7);
@@ -915,6 +1126,13 @@ main #rakguide-video {
 main #rakguide-video .container iframe {
   width: 100% !important;
   height: 570px !important;
+}
+
+@media only screen and (max-width: 576px) {
+  main #rakguide-video .container iframe {
+    width: 100%;
+    height: 250px !important;
+  }
 }
 
 main #rakguide-content {
@@ -952,14 +1170,41 @@ main #rakguide-content .title h3 {
   font-size: 40px;
 }
 
+@media only screen and (max-width: 992px) {
+  main #rakguide-content .title h3 {
+    font-size: 30px;
+  }
+}
+
 main #rakguide-content .container h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: #444;
   font-weight: bolder;
 }
 
+@media only screen and (max-width: 992px) {
+  main #rakguide-content .container h1 {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  main #rakguide-content .container .rakguide-content__main {
+    padding: 10px;
+  }
+}
+
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left {
   width: 60%;
+}
+
+@media only screen and (max-width: 576px) {
+  main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left {
+    width: 100%;
+  }
+  main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left img {
+    width: 100%;
+  }
 }
 
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item {
@@ -1000,6 +1245,13 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
   padding: 15px 10px;
 }
 
+@media only screen and (max-width: 992px) {
+  main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item .short-guide__item ol li p {
+    font-size: 15px;
+    line-height: 1.75rem;
+  }
+}
+
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item .short-guide__item ol li span {
   font-size: 40px;
   font-weight: 800;
@@ -1010,6 +1262,12 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
   line-height: 1.5em;
+}
+
+@media only screen and (max-width: 992px) {
+  main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item > p {
+    font-size: 18px;
+  }
 }
 
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item .sub::first-letter {
@@ -1025,6 +1283,13 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
   padding: 40px;
 }
 
+@media only screen and (max-width: 576px) {
+  main #rakguide-content .container .rakguide-content__main .rakguide-content__main-right {
+    width: 100%;
+    padding: 40px 10px;
+  }
+}
+
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-right .rakguide-content__right-item ul li {
   margin-top: 10px;
 }
@@ -1032,7 +1297,7 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-right .rakguide-content__right-item ul li p {
   font-size: 18px;
   line-height: 2rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-right .rakguide-content__right-item ul li p::before {
@@ -1044,6 +1309,4 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-=======
->>>>>>> master
 /*# sourceMappingURL=main.css.map */

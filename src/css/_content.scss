@@ -1,5 +1,4 @@
 .btn {
-    // a code cho btn đây
     cursor: pointer;
     padding: 12px 25px;
     color: white;
@@ -10,12 +9,8 @@
     border: none;
     outline: none;
     border-radius: 4px;
-<<<<<<< HEAD
     transition: all .4s;
     &:hover{
-=======
-    &:hover {
->>>>>>> master
         filter: brightness(120%);
     }
 }
@@ -187,11 +182,8 @@ main {
                             display: inline-block;
                             width: 100%;
                             text-align: center;
-<<<<<<< HEAD
                           
                        
-=======
->>>>>>> master
                             transition: margin-left .4s ease-in-out;
                             a {
                                 img {}
@@ -223,8 +215,6 @@ main {
             }
         }
     }
-<<<<<<< HEAD
-
     #review{
             .review-content{
                
@@ -244,29 +234,6 @@ main {
                         font-size: 40px !important;
                     }
                   
-=======
-    #review {
-        .review-content {
-            .review-content__item {
-                width: 50%;
-                background-color: rgba($color: gray, $alpha: .3);
-            }
-            h1 {
-                height: 100%;
-                line-height: 1.5em;
-                text-align: center;
-                font-size: 50px;
-                color: $font-color;
-                @include rs-lg {
-                    font-size: 40px !important;
-                }
-            }
-            img {
-                width: 100%;
-                cursor: pointer;
-                &:hover {
-                    filter: blur(2px);
->>>>>>> master
                 }
             }
             @include rs-lg {
@@ -279,7 +246,7 @@ main {
                     }
                 }
             }
-        }
+    
         .container {
             padding: 66px 0 14rem;
             text-align: center;
@@ -303,7 +270,6 @@ main {
                 input:nth-of-type(#{$i}):checked~.review-slider ul li:nth-child(#{$i}) {
                     display: block;
                 }
-<<<<<<< HEAD
 
                 @-webkit-keyframes fadeIn {
                     from { opacity: 0; }
@@ -357,28 +323,6 @@ main {
                                 font-size: 18px;
                                 color: rgba($color: $font-color, $alpha: .6);
                             }
-=======
-            }
-            .review-slider {
-                position: absolute;
-                top: 60%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                ul {
-                    font-size: 0;
-                    li {
-                        width: 500px;
-                        font-size: 20px;
-                        display: none;
-                        @include rs-sm {
-                            padding-top: 20px;
-                            width: 400px;
-                        }
-                        p {
-                            line-height: 2rem;
-                            font-size: 18px;
-                            color: rgba($color: $font-color, $alpha: .6);
->>>>>>> master
                         }
                     }
                 }
@@ -410,16 +354,10 @@ main {
             }
         }
     }
-<<<<<<< HEAD
-
-    #about{
-        .about-top{
-            background-color: rgba($color: $bg-color, $alpha: .3);
-=======
     #about {
         .about-top {
             background-color: rgba($color: gray, $alpha: .3);
->>>>>>> master
+
             text-align: center;
             padding: 50px 0 10px;
             h1 {
@@ -490,13 +428,8 @@ main {
                     button {
                         background-color: transparent;
                         border: 2px solid white;
-<<<<<<< HEAD
                        
                         &:hover{
-=======
-                        transition: all .4s;
-                        &:hover {
->>>>>>> master
                             background-color: $main-color;
                         }
                     }
