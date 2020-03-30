@@ -467,7 +467,7 @@ main #review .container h1 {
 
 @media only screen and (max-width: 992px) {
   main #review .container h1 {
-    font-size: 40px  !important;
+    font-size: 40px !important;
   }
 }
 
@@ -609,7 +609,7 @@ main #about .about-top h1 {
 
 @media only screen and (max-width: 992px) {
   main #about .about-top h1 {
-    font-size: 40px  !important;
+    font-size: 40px !important;
   }
 }
 
@@ -894,13 +894,19 @@ header .containerx .header-item:hover a {
   color: #35baf2;
 }
 
+<<<<<<< HEAD
 header .containerx .header-money:hover {
   border: none !important;
+=======
+header .containerx .header-item .header-money {
+  padding-left: 20px;
+>>>>>>> master
 }
 
 header .containerx .btn-box:hover {
   border: none !important;
 }
+<<<<<<< HEAD
 
 main #rakguide-video {
   background-color: rgba(0, 0, 0, 0.7);
@@ -1038,4 +1044,6 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+=======
+>>>>>>> master
 /*# sourceMappingURL=main.css.map */
