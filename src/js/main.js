@@ -12,13 +12,35 @@ for(let i = 0; i < addToCart.length; i++){
 
 
 let rakModal = document.getElementsByClassName("rak-modal");
+if(rakModal.length>0){
 
-console.log(rakModal[0].textContent);
-
-rakModal[0].addEventListener('click',()=>{
-  let modal = document.getElementsByClassName("modal");
-  modal[0].style.display = 'flex';
-  modal[0].addEventListener('click',()=>{
-    modal[0].style.display = 'none';
+  rakModal[0].addEventListener('click',()=>{
+    let modal = document.getElementsByClassName("modal");
+    modal[0].style.display = 'flex';
+    modal[0].addEventListener('click',()=>{
+      modal[0].style.display = 'none';
+    })
   })
-})
+}
+
+
+
+let menu = document.getElementsByClassName("menu");
+let check = true;
+if(menu.length >0){
+  menu[0].addEventListener('click',()=>{
+    if(check){
+      let nav = document.getElementsByClassName("header-right_nav");
+      nav[0].style.display = "flex";
+      document.body.style.overflow = "hidden";
+      check = false;
+    }
+    else{
+        let nav = document.getElementsByClassName("header-right_nav");
+        nav[0].style.display = "none";
+        document.body.style.overflow = "scroll";
+        check = true;
+    }
+    
+  })
+}

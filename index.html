@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./vendor/animate.min.css">
 
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,400,400i,600,600i,700,700i,800,800i&display=swap&subset=vietnamese"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,400,400i,600,600i,700,700i,800,800i&display=swap&subset=vietnamese"
         rel="stylesheet">
     <title>Nice Bro</title>
 </head>
@@ -26,16 +25,21 @@
                 </div>
                 <div class="header-center">
                 </div>
-                <ul class="header-right flex j-end">
-                    <li class="header-item"><a href="../public/store.html">STORE</a> </li>
-                    <li class="header-item"><a href="../public/rakguide.html">RAKGUIDE</a></li>
-                    <li class="header-item"> <a href="../public/reseller.html">RESELLER</a> </li>
-                    <li class="header-item btn-box">
-                        <a href=""><button class="btn btn-buy">BUY NOW</button></a>
-                    </li>
-                    <li class="header-item header-money"><a href="" class="shopping-cart"><i
-                                class="fas fa-shopping-cart"></i> 0 VND</a></li>
-                </ul>
+                <div class="header-right">
+                    <div class="menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="header-right_nav flex j-end a-center">
+                        <li class="header-item"><a href="../public/store.html">STORE</a> </li>
+                        <li class="header-item"><a href="../public/rakguide.html">RAKGUIDE</a></li>
+                        <li class="header-item"> <a href="../public/reseller.html">RESELLER</a> </li>
+                        <li class="header-item btn-box">
+                            <a href=""><button class="btn btn-buy">BUY NOW</button></a>
+                        </li>
+                        <li class="header-item header-money"><a href="" class="shopping-cart"><i
+                                    class="fas fa-shopping-cart"></i> 0 VND</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -243,8 +247,12 @@
 
 
     </main>
-    <footer></footer>
+
+    <footer>
+
+    </footer>
 </body>
+<script src="./src/js/main.js"></script>
 <script src="./vendor/wow.min.js"></script>
 <script>
     new WOW().init();

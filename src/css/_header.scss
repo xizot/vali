@@ -12,6 +12,8 @@ header {
     .containerx {
         padding: 1px 50px;
         margin: 0 auto;
+        position: relative;
+        z-index: 99;
         .header-left {
             img {
             max-width: 100%;
@@ -23,48 +25,76 @@ header {
         }
         .header-center {}
         .header-right {
-            display: flex;
-            align-items: center;
-            
-            .header-item {
-                @include rs-sm{
+           
+            .menu{
+                display: none;
+                cursor: pointer;
+                @include rs-lg{
+                    display: block !important;
+                }
+                i{
+                    font-size: 35px;
+                }
+               
+            }
+           .header-right_nav{
+                @include rs-lg{
+                    z-index: -1;
                     display: none;
+                    overflow: hidden;
+                    position: fixed;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: white;
+                    width: 100vw;
+                    height: 100vh;
                 }
-                padding: 20px;
-                a {
-                    font-family: 'Source Sans Pro', sans-serif;
-                    color: $font-color;
-                    font-size: 15px;
-                    font-weight: 600;
-                }
-                .btn-buy {
-                    padding: 5px 15px !important;
-                    border-radius: 10px;
-                }
-                &:hover {
-                    border-top: 2px solid $main-color;
+                .header-item {
+                
+                    padding: 20px;
                     a {
-                        color: #35baf2;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        color: $font-color;
+                        font-size: 15px;
+                        font-weight: 600;
+                        @include rs-lg{
+                            font-size: 20px;
+                        }
+                    }
+                    .btn-buy {
+                        padding: 5px 15px !important;
+                        border-radius: 10px;
+                        @include rs-lg{
+                            padding: 12px 25px !important;
+                        }
+                    }
+                    &:hover {
+                        border-top: 2px solid $main-color;
+                        @include rs-lg{
+                            border: none;
+                        }
+
+                        a {
+                            color: #35baf2;
+                        }
+                    }
+            
+                }
+                .header-money {
+                    &:hover {
+                        border: none !important;
                     }
                 }
-          
-            }
-            .header-money {
-                &:hover {
-                    border: none !important;
+                .btn-box {
+                    &:hover {
+                        border: none !important;
+                    }
                 }
-                @include rs-sm{
-                    display: block !important;
-                }
-            }
-            .btn-box {
-                &:hover {
-                    border: none !important;
-                }
-                @include rs-sm{
-                    display: block !important;
-                }
-            }
+           }
+            
         }
     }
 }
