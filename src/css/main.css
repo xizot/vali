@@ -1095,18 +1095,25 @@ header .containerx .header-left img {
 }
 
 header .containerx .header-right .menu {
-  display: none;
   cursor: pointer;
-}
-
-@media only screen and (max-width: 992px) {
-  header .containerx .header-right .menu {
-    display: block !important;
-  }
 }
 
 header .containerx .header-right .menu i {
   font-size: 35px;
+  color: #444;
+}
+
+header .containerx .header-right .menu .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  header .containerx .header-right .menu .fa-times {
+    font-size: 40px;
+  }
+  header .containerx .header-right .menu .fa-bars {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -1277,10 +1284,9 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item .rak-modal {
   cursor: pointer;
   font-size: 18px;
-}
-
-main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item .rak-modal:hover {
   color: #35baf2;
+  text-align: center;
+  border-bottom: 1px solid #35baf2;
 }
 
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item img {
@@ -1305,13 +1311,13 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
 main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item .short-guide__item ol li p {
   color: rgba(68, 68, 68, 0.7);
   font-size: 17px;
-  padding: 15px 10px;
+  padding: 5px 10px;
 }
 
 @media only screen and (max-width: 992px) {
   main #rakguide-content .container .rakguide-content__main .rakguide-content__main-left .rakguide-content__left-item .short-guide__item ol li p {
     font-size: 15px;
-    line-height: 1.75rem;
+    line-height: 2rem;
   }
 }
 

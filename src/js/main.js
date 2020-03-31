@@ -25,22 +25,24 @@ if(rakModal.length>0){
 
 
 
-let menu = document.getElementsByClassName("menu");
-let check = true;
+let menu = document.getElementsByClassName("fa-bars");
+let times = document.getElementsByClassName("fa-times");
+
 if(menu.length >0){
   menu[0].addEventListener('click',()=>{
-    if(check){
       let nav = document.getElementsByClassName("header-right_nav");
       nav[0].style.display = "flex";
       document.body.style.overflow = "hidden";
-      check = false;
-    }
-    else{
-        let nav = document.getElementsByClassName("header-right_nav");
-        nav[0].style.display = "none";
-        document.body.style.overflow = "scroll";
-        check = true;
-    }
-    
+      menu[0].style.display = "none";
+      times[0].style.display = "block";
+  })
+}
+if(times.length >0){
+  times[0].addEventListener('click',()=>{
+    let nav = document.getElementsByClassName("header-right_nav");
+    nav[0].style.display = "none";
+    document.body.style.overflow = "scroll";
+    menu[0].style.display = "block";
+    times[0].style.display = "none";
   })
 }

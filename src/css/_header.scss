@@ -27,14 +27,24 @@ header {
         .header-right {
            
             .menu{
-                display: none;
+                
                 cursor: pointer;
-                @include rs-lg{
-                    display: block !important;
-                }
                 i{
                     font-size: 35px;
+                    color: $font-color;
                 }
+                .fas{
+                    display: none;
+                }
+                @include rs-lg{
+                    .fa-times{
+                        font-size: 40px;
+                    }
+                    .fa-bars{
+                        display: block;
+                    }
+                }
+               
                
             }
            .header-right_nav{

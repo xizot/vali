@@ -81,9 +81,10 @@ main{
                         .rak-modal{
                             cursor: pointer;
                             font-size: 18px;
-                            &:hover{
-                                color: $main-color;
-                            }
+                            color: $main-color;
+                            text-align: center;
+                            border-bottom: 1px solid  $main-color;;
+                            
                         }
                         img{
                             margin:20px 0;
@@ -91,7 +92,6 @@ main{
                         .short-guide__item{
                           margin-top: 20px;
                             ol{
-                               
                                 // list-style-type: decimal !important;
                                 width: 100%;
                                 li{
@@ -100,10 +100,10 @@ main{
                                     p{
                                         color: rgba($color: $font-color, $alpha: .7);
                                         font-size: 17px;
-                                        padding: 15px 10px;
+                                        padding: 5px 10px;
                                         @include rs-lg{
                                             font-size: 15px;
-                                            line-height: 1.75rem;
+                                            line-height: 2rem;
                                         }
                                     }
                                     span{
