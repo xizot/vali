@@ -1,6 +1,7 @@
 header {
     .containerx {
         padding: 1px 50px;
+        margin: 0 auto;
         .header-left img {
             max-width: 100%;
         }
@@ -8,14 +9,6 @@ header {
         .header-right {
             display: flex;
             align-items: center;
-            // đối với thẻ <a>
-            // e phải css trực tiếp cho nó
-            // như này mới đúng nha. ul > li
-            // không uđợc ul > a :3
-            // mình neen hover vào <li> nha
-            // khi hover vào thẻ <li> chứa button thì border = none. e thử làm xem
-            // thứ 2. class btn-demo và  header-item ngang hàng với nhau
-            // nên ko thể để class header-item bọc btn được
         }
         .header-item {
             padding: 20px;
@@ -28,31 +21,21 @@ header {
             .btn-buy {
                 padding: 5px 15px !important;
                 border-radius: 10px;
-                &:hover {
-                    border: none !important;
-                }
             }
             &:hover {
-                border-bottom: 2px solid $main-color;
+                border-top: 2px solid $main-color;
+                a {
+                    color: #35baf2;
+                }
             }
             .header-money {
                 padding-left: 20px;
             }
         }
+        .btn-box {
+            &:hover {
+                border: none !important;
+            }
+        }
     }
 }
-
-.header-item:hover {
-    color: #35baf2 !important;
-    text-decoration: none;
-}
-
-//giờ e làm xong thì gõ như này nha
-// git add .
-// git commit -m "text"
-// git push
-// # neu no hien ra cai nay: [git push --set-upstream origin inau]
-// thi copy bo vao 
-// chi can go 1 lan. lan sau cu "git push" la xong
-// muốn đồng bộ code của a xuống nữa
-// thì gõ : git pull origin master
