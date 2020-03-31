@@ -465,7 +465,7 @@ main #review .container h1 {
 
 @media only screen and (max-width: 992px) {
   main #review .container h1 {
-    font-size: 40px  !important;
+    font-size: 40px !important;
   }
 }
 
@@ -570,7 +570,7 @@ main #about .about-top h1 {
 
 @media only screen and (max-width: 992px) {
   main #about .about-top h1 {
-    font-size: 40px  !important;
+    font-size: 40px !important;
   }
 }
 
@@ -815,23 +815,16 @@ main #store-product .container .store-product__item .item-space a button {
   margin: 10px 0px 10px;
 }
 
-.header {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+header .containerx {
+  padding: 1px 50px;
+  margin: 0 auto;
 }
 
-.header .header-left img {
+header .containerx .header-left img {
   max-width: 100%;
 }
 
-.header .header-right {
+header .containerx .header-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,7 +833,35 @@ main #store-product .container .store-product__item .item-space a button {
           align-items: center;
 }
 
-.header .header-right .header-item {
+header .containerx .header-item {
   padding: 20px;
+}
+
+header .containerx .header-item a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #444;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+header .containerx .header-item .btn-buy {
+  padding: 5px 15px !important;
+  border-radius: 10px;
+}
+
+header .containerx .header-item:hover {
+  border-top: 2px solid #35baf2;
+}
+
+header .containerx .header-item:hover a {
+  color: #35baf2;
+}
+
+header .containerx .header-item .header-money {
+  padding-left: 20px;
+}
+
+header .containerx .btn-box:hover {
+  border: none !important;
 }
 /*# sourceMappingURL=main.css.map */
