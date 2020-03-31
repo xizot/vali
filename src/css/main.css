@@ -1379,4 +1379,87 @@ main #rakguide-content .container .rakguide-content__main .rakguide-content__mai
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+.footer-struc {
+  width: 100%;
+  background-color: #363839;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-struc .footer-main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 18px;
+  padding-bottom: 0;
+}
+
+.footer-struc .footer-main .footer-left {
+  padding: 20px;
+  width: 50%;
+}
+
+.footer-struc .footer-main .footer-help {
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+.footer-struc .footer-main .line-horizontal {
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.footer-struc .footer-main .line-horizontal hr {
+  margin: 10px 0;
+}
+
+.footer-struc .footer-main .footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #bfbfbf;
+  margin-bottom: 10px;
+}
+
+.footer-struc .footer-main .footer-right {
+  padding: 20px;
+  width: 50%;
+}
+
+.footer-struc .footer-main .footer-business {
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+.footer-struc .footer-end {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  color: #72849c;
+  background: #282a2b;
+  height: 100%;
+  padding: 9px 20px 10px;
+}
+
+.footer-struc .connect {
+  margin-top: 15px;
+}
 /*# sourceMappingURL=main.css.map */
