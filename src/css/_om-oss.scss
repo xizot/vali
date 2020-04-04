@@ -1,0 +1,207 @@
+.om-over {
+    .text-center {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-top: 69px;
+        background: url('https://www.vali.se/wp-content/uploads/2020/02/Om_Oss_Vali_Rakning_BG.jpg');
+        background-repeat: no-repeat;
+        background-position: 58% 0;
+        position: relative;
+        background-size: cover;
+        width: 100%;
+        height: 90vh;
+        text-align: center;
+        .headline {
+            margin-bottom: 20px;
+            h1 {
+                border-bottom: -1px solid #ddd;
+                font-weight: 750;
+                color: #fff;
+                font-size: 80px;
+                padding: 25px 300px;
+                @include rs-lg {
+                    padding: 25px 50px;
+                }
+            }
+            .line {
+                width: 100%;
+                height: 2px;
+                background-color: white;
+            }
+        }
+    }
+    .mission {
+        text-align: center;
+        padding: 50px 10px 50px 10px;
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            color: #515b69;
+            padding-bottom: 10px;
+        }
+        .text-mission {
+            font-size: 20px;
+            font-weight: 400;
+            color: #7f8795;
+        }
+        .one {
+            margin-bottom: 20px;
+        }
+    }
+    .intro-1 {
+        padding: 50px 10px 10px 10px;
+        .img-intro-1 {
+            padding: 20px 0;
+            img {
+                max-width: 100%;
+            }
+            width: 50%;
+        }
+        .content-intro-1 {
+            width: 50%;
+            padding: 20px;
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                color: #515b69;
+                padding-bottom: 10px;
+            }
+            .text-one-size {
+                text-align: left;
+                font-size: 20px;
+                font-weight: 400;
+                color: #7f8795;
+                line-height: 1.5;
+            }
+        }
+    }
+    .intro-2 {
+        padding: 50px 10px 10px 10px;
+        .content-intro-2 {
+            width: 50%;
+            padding: 20px;
+            margin-top: 60px;
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                color: #515b69;
+                padding-bottom: 10px;
+            }
+            .text-rocking-market {
+                text-align: left;
+                font-size: 20px;
+                font-weight: 400;
+                color: #7f8795;
+                line-height: 1.6;
+            }
+        }
+        .img-intro-2 {
+            padding: 20px 0;
+            img {
+                max-width: 100%;
+            }
+            width: 50%;
+        }
+    }
+    .intro-3 {
+        padding: 50px 10px 10px 10px;
+        .img-intro-3 {
+            padding: 20px 0;
+            img {
+                max-width: 100%;
+            }
+            width: 50%;
+        }
+        .content-intro-3 {
+            width: 50%;
+            padding: 20px;
+            margin-top: 30px;
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                color: #515b69;
+                padding-bottom: 10px;
+            }
+            .text-the-search {
+                text-align: left;
+                font-size: 20px;
+                font-weight: 400;
+                color: #7f8795;
+                line-height: 1.5;
+            }
+        }
+    }
+    .intro-4 {
+        padding: 50px 10px 10px 10px;
+        .content-intro-4 {
+            width: 50%;
+            padding: 20px;
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                color: #515b69;
+                padding-bottom: 10px;
+            }
+            .text-the-old-the-new {
+                text-align: left;
+                font-size: 20px;
+                font-weight: 400;
+                color: #7f8795;
+                line-height: 1.6;
+                p {
+                    line-height: 2rem;
+                }
+            }
+        }
+        .img-intro-4 {
+            padding: 20px 0;
+            img {
+                max-width: 100%;
+            }
+            width: 50%;
+        }
+    }
+    .hosts {
+        flex-direction: column;
+        padding: 28px 20px 75px;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        background-color: #333;
+        margin: 0 0 50px;
+        line-height: 1.6;
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .hosts-item {
+            margin: 20px 0px;
+            padding: 20px;
+            width: 50%;
+            @include rs-lg {
+                width: 100%;
+            }
+            i {}
+            h2 {
+                font-size: 40px;
+                font-weight: 100;
+            }
+            p {
+                font-size: 18px;
+                margin-top: 5px;
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+main {
+    .it-item {
+        @include rs-lg {
+            width: 100% !important;
+            h1 {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+}

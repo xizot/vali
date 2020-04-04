@@ -1,0 +1,60 @@
+main{
+    #reseller{
+        .reseller-categories{
+            background-color: $main-color;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .reseller-content{
+            padding: 80px 0;
+            .resellter-categories_left{
+                width: 70%;
+                @include rs-sm{
+                    width: 100%;
+                    h3{
+                        text-align: center;
+                    }
+                }
+                h3{
+                  
+                    font-size: 50px;
+                    color: $font-color;
+                    font-weight: bolder;
+                }
+                ul{
+                    padding: 20px;
+                    li{
+                        @include rs-sm{
+                            width: 50%;
+                            text-align: center;
+                        }
+                        a{
+                            img{
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .resellter-categories_right{
+                width: 30%;
+                @include rs-sm{
+                    width: 100%;
+                    text-align: center;
+                }
+                color: $font-color;
+                padding: 0 40px;
+                h4{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 20px;
+                    margin-top: 20px;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
